@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+{% block title %}
+    Doctors
+{% endblock %}
+
+{% block content %}
+
+
+<section>
+    <h1>doctors page</h1>
+    {% for doctor in doctors %}
+        <h1>{{doctor.dep_name}}</h1>
+        <h1>{{doctor.doc_spec}}</h1>
+        <h1>{{doctor.dep_name}}</h1>
+        <h1>{{doctor.doc_image}}</h1>
+    {% endfor %}
+</section>
+
+{% endblock %}

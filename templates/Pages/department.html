@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Department
+{% endblock %}
+{% block content %}
+
+
+<section>
+    <h1 class="text-center">Department</h1>
+    {% for department in departments %}
+        <h1>{{department.dep_name}}</h1>
+        <h1>{{department.dep_description}}</h1>
+    {% endfor %}
+</section>
+
+{% endblock %}
